@@ -10,11 +10,10 @@ deploy:
   provider: elasticbeanstalk
   region: "ap-southeast-1"
   app: "docker"
-  environment: "docker-env"
+  env: "docker-env"
   bucket_name: "elasticbeanstalk-ap-southeast-1-674224916912"
   bucket_path: "docker"
   on:
    branch: master
   access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: 
-    secure: $AWS_SECRET_KEY
+  secret_access_key: $AWS_SECRET_KEY
